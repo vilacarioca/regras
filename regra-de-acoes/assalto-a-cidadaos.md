@@ -15,9 +15,9 @@ Regras para Assalto a Player
 **Conduta**
 
 * Os assaltantes estão **proibidos de serem os primeiros a efetuar disparos de arma de fogo**. Eles poderão somente **revidar caso as vítimas atirem primeiro**.
-* Nos casos em que a vítima efetue disparos primeiro e seja morta, a mesma deve aceitar a revista por parte dos assaltantes.
 * A ação de assalto deve ser focada na **geração de conteúdo**. Portanto, deve ser **bem organizada**, evitando render as vítimas de forma improvisada, sem prévia elaboração ou vantagem clara.
 * É essencial agir com **bom senso** em todas as etapas da ação.
+* Assaltos só deverão ser realizados com **PISTOLAS,** fica proibido o assalto a jogadores com o uso de **armamentos pesados.**
 
 **Comunicação**
 
