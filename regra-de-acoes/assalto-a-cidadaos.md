@@ -14,7 +14,7 @@ Regras para Assalto a Player
 
 **Conduta**
 
-* Os assaltantes estão **proibidos de serem os primeiros a efetuar disparos de arma de fogo**. Eles poderão somente **revidar caso as vítimas atirem primeiro**.
+* Os assaltantes devem agir com bom senso e valorização da vida, priorizando a interpretação realista da situação. O uso de armas de fogo deve ser tratado como último recurso, considerando os riscos e as consequências de um confronto. Disparos sem justificativa ou necessidade devem ser evitados, prezando sempre pela coerência do Roleplay e pela preservação da vida de todos os envolvidos.
 * A ação de assalto deve ser focada na **geração de conteúdo**. Portanto, deve ser **bem organizada**, evitando render as vítimas de forma improvisada, sem prévia elaboração ou vantagem clara.
 * É essencial agir com **bom senso** em todas as etapas da ação.
 * Assaltos só deverão ser realizados com **PISTOLAS,** fica proibido o assalto a jogadores com o uso de **armamentos pesados.**
