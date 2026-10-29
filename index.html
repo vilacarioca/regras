@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0a0b">
+  <meta name="description" content="Livro de regras oficial da Vila Carioca: regras gerais, RDM, VDM, Metagaming, Combat Logging, facções, polícia e regras de cada ação.">
+  <title>Livro de Regras | Vila Carioca</title>
+  <link rel="icon" href="assets/vila-carioca-logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,800;1,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/regras.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#regras">Pular para as regras</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Vila Carioca, início">
+        <span class="brand-logo"><img src="assets/vila-carioca-logo.webp" alt="" width="64" height="64"></span>
+        <span><strong>VILA <em>CARIOCA</em></strong><small>LIVRO DE REGRAS</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#regras">Capítulos</a>
+        <a href="#gerais">Regras gerais</a>
+        <a href="#faccoes">Facções</a>
+        <a href="#acoes">Ações</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-split">
+        <div>
+          <div class="eyebrow"><span class="pulse"></span> REGRAS OFICIAIS <span class="eyebrow-rule"></span> <span class="eyebrow-extra">VILA CARIOCA RP</span></div>
+          <h1 id="hero-title">LIVRO DE<br><span>REGRAS.</span></h1>
+          <p>Todas as regras da cidade em um só lugar. Elas devem ser cumpridas sem exceções, e qualquer regra que não esteja neste livro não se aplica ao sistema de punições.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#regras">Ler as regras <span aria-hidden="true">↓</span></a>
+            <a class="button button-outline" href="#acoes">Regras de ações <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note"><span class="note-mark">!</span> O descumprimento das regras pode gerar banimento indeterminado.</div>
+        </div>
+        <nav class="quick" aria-label="Regras mais consultadas">
+          <div class="quick-head"><span>MAIS CONSULTADAS</span><span class="quick-count">34 CAPÍTULOS</span></div>
+          <a href="#rdm"><span class="quick-num">05</span><span><strong>RDM</strong><small>Matar sem motivo de RP</small></span><b aria-hidden="true">↗</b></a>
+          <a href="#vdm"><span class="quick-num">06</span><span><strong>VDM</strong><small>Usar veículo como arma</small></span><b aria-hidden="true">↗</b></a>
+          <a href="#metagaming"><span class="quick-num">04</span><span><strong>Metagaming</strong><small>Informação de fora do jogo</small></span><b aria-hidden="true">↗</b></a>
+          <a href="#cl"><span class="quick-num">07</span><span><strong>Combat Logging</strong><small>Deslogar durante ação</small></span><b aria-hidden="true">↗</b></a>
+          <a href="#amor"><span class="quick-num">09</span><span><strong>Amor à vida</strong><small>Valorizar a vida do personagem</small></span><b aria-hidden="true">↗</b></a>
+          <a href="#acoes"><span class="quick-num">✦</span><span><strong>Regra de ações</strong><small>Limites, bancos, joalheria e mais</small></span><b aria-hidden="true">↗</b></a>
+        </nav>
+      </div>
+    </section>
+
+    <div class="docs" id="regras">
+      <div class="container docs-layout">
+        <aside class="sidebar" aria-label="Capítulos">
+          <label class="search-field"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar nas regras..." aria-label="Buscar nas regras" autocomplete="off"><kbd>/</kbd></label>
+          <p class="search-status" id="search-status" role="status" aria-live="polite"></p>
+          <button type="button" class="toc-toggle" id="toc-toggle" aria-expanded="false" aria-controls="toc">Capítulos <span aria-hidden="true">▾</span></button>
+          <nav class="toc" id="toc">
+            <span class="toc-group">Introdução</span>
+            <a href="#livro"><span aria-hidden="true">✦</span>Livro de Regras</a>
+            <a href="#monitoramento"><span aria-hidden="true">✦</span>Monitoramento e provas</a>
+            <span class="toc-group">Regras</span>
+            <a href="#discord"><span>01</span>Regras do Discord</a>
+            <a href="#personagem"><span>02</span>Regras de Personagem</a>
+            <a href="#gerais"><span>03</span>Regras Gerais</a>
+            <a href="#metagaming"><span>04</span>Metagaming</a>
+            <a href="#rdm"><span>05</span>Random Deathmatch (RDM)</a>
+            <a href="#vdm"><span>06</span>Vehicle Deathmatch (VDM)</a>
+            <a href="#cl"><span>07</span>Combat Logging (CL)</a>
+            <a href="#pd"><span>08</span>Perma Death (PD)</a>
+            <a href="#amor"><span>09</span>Amor à vida</a>
+            <a href="#antirp"><span>10</span>Anti Roleplay</a>
+            <a href="#flaming"><span>11</span>Flaming</a>
+            <a href="#safezones"><span>12</span>Safezones</a>
+            <a href="#pg"><span>13</span>Power Gaming (PG)</a>
+            <a href="#prp"><span>14</span>Power Roleplay</a>
+            <a href="#copbait"><span>15</span>Cop Bait</a>
+            <a href="#darkrp"><span>16</span>Dark Roleplay</a>
+            <a href="#pichacao"><span>17</span>Pichação</a>
+            <a href="#venda"><span>18</span>Venda de itens</a>
+            <a href="#celular"><span>19</span>Celular</a>
+            <a href="#faccoes"><span>20</span>Facções e conteúdo</a>
+            <a href="#helicoptero"><span>21</span>Helicóptero</a>
+            <a href="#negociacao"><span>22</span>Negociação</a>
+            <a href="#pacificacao"><span>23</span>Pacificação</a>
+            <a href="#policia"><span>24</span>Polícia</a>
+            <span class="toc-group">Ações</span>
+            <a href="#acoes"><span aria-hidden="true">✦</span>Regra de ações</a>
+            <a href="#caixa-eletronico"><span aria-hidden="true">·</span>Caixa Eletrônico</a>
+            <a href="#caixa-registradora"><span aria-hidden="true">·</span>Caixa Registradora</a>
+            <a href="#caminhao-cegonha"><span aria-hidden="true">·</span>Caminhão Cegonha</a>
+            <a href="#joalheria"><span aria-hidden="true">·</span>Joalheria</a>
+            <a href="#banco-paleto"><span aria-hidden="true">·</span>Banco de Paleto</a>
+            <a href="#niobio"><span aria-hidden="true">·</span>Nióbio</a>
+            <a href="#assalto-cidadaos"><span aria-hidden="true">·</span>Assalto a cidadãos</a>
+          </nav>
+        </aside>
+
+        <div class="content" id="content">
+          <div class="empty-state" id="empty-state" hidden><span>⌕</span><h3>Nada encontrado</h3><p>Tente outro termo.</p><button type="button" class="text-button" id="reset-search">Limpar busca →</button></div>
+
+          <section class="chapter" id="livro" aria-labelledby="t-livro">
+            <header class="chapter-head"><span class="kicker">/ AVISO IMPORTANTE</span><h2 id="t-livro">LIVRO DE <em>REGRAS</em></h2></header>
+            <div class="callout callout-danger"><span class="callout-icon" aria-hidden="true">⚠</span><p>O descumprimento das regras descritas neste documento pode gerar <strong>BANIMENTO INDETERMINADO</strong>. Atente-se a todas elas.</p></div>
+            <h3>Observações</h3>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>Todas as regras abaixo descritas deverão ser cumpridas <strong>sem exceções</strong>. O rompimento de qualquer uma delas acarretará em <strong>punições determinadas única e exclusivamente pela Administração do Vila Carioca</strong>.</div></li>
+              <li><span class="rule-num">2</span><div>Este documento contém todas as regras para o bom e saudável funcionamento e andamento do servidor. Qualquer regra que <strong>não esteja neste livro de regras não se aplica ao sistema de punições</strong>, a menos que orientado especificamente por um administrador competente. <em>(Importante sempre guardar provas das orientações recebidas.)</em></div></li>
+              <li><span class="rule-num">3</span><div>É fundamental que os players estejam constantemente atualizados das regras e de suas alterações/atualizações.</div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="monitoramento" aria-labelledby="t-monitoramento">
+            <header class="chapter-head"><span class="kicker">/ ADMINISTRAÇÃO</span><h2 id="t-monitoramento">MONITORAMENTO E <em>PRODUÇÃO DE PROVAS</em></h2></header>
+            <p>Todos os jogadores estão sujeitos à constante análise pela administração do servidor para garantir o cumprimento efetivo das regras.</p>
+            <h3>1. Infrações e penalidades</h3>
+            <ul>
+              <li><strong>1.1.</strong> Jogadores que descumprirem regras ou não contribuírem para um ambiente sadio e justo estão sujeitos a punições administrativas.</li>
+              <li><strong>1.2.</strong> A administração tem autonomia para <strong>coletar evidências</strong> e <strong>banir ou suspender</strong> qualquer jogador do servidor.
+                <ul>
+                  <li><strong>1.2.1.</strong> Capturas de tela, vídeos, prints e arquivos de áudio são considerados <strong>meios de prova</strong> para punições administrativas.</li>
+                  <li><strong>1.2.2.</strong> A palavra de um administrador é igualmente considerada <strong>prova suficiente</strong> para suspensão ou banimento.</li>
+                </ul>
+              </li>
+            </ul>
+            <h3>2. Monitoramento e uso de softwares terceiros</h3>
+            <ul>
+              <li><strong>2.1.</strong> A administração tem total autonomia para <strong>monitorar e suspeitar do uso de softwares terceiros</strong> para obter vantagem dentro do servidor.</li>
+              <li><strong>2.2.</strong> Jogadores suspeitos de utilizar tais softwares podem <strong>passar por procedimentos de averiguação</strong> para que voltem a ser liberados no servidor. Os procedimentos são detalhados a seguir.</li>
+            </ul>
+            <h3>Do procedimento de averiguação</h3>
+            <p>Embora ninguém seja obrigado a aceitar a telagem, a administração poderá manter <strong>permanentemente banido quem a recusar</strong>, por suspeita de uso de softwares maliciosos, prezando pelo bom andamento do servidor e fazendo valer as regras de monitoramento administrativo e produção de provas.</p>
+            <h4>1. Suspensão temporária</h4>
+            <ul>
+              <li><strong>1.1.</strong> Ao suspeitar de um jogador, a administração poderá <strong>suspendê-lo temporariamente</strong>.</li>
+              <li><strong>1.2.</strong> A suspensão visa impedir que o jogador <strong>prejudique o servidor</strong> durante a averiguação.</li>
+              <li><strong>1.3.</strong> A suspensão será sempre <strong>comunicada ao jogador</strong>.</li>
+            </ul>
+            <h4>2. Prazos para contato com a administração</h4>
+            <ul>
+              <li><strong>2.1.</strong> Se <strong>logado</strong>, prazo de <strong>1 hora</strong> para iniciar contato.
+                <ul><li><strong>2.1.1.</strong> O jogador logado poderá ter sua <strong>tela travada com uma mensagem</strong> solicitando o início do contato com a administração e, portanto, <strong>NÃO deverá deslogar até que a averiguação seja concluída</strong>.</li></ul>
+              </li>
+              <li><strong>2.2.</strong> Se <strong>deslogado</strong>, prazo de <strong>12 horas</strong> para iniciar contato.</li>
+              <li><strong>2.3.</strong> Após iniciar o contato, o jogador <strong>não deverá demorar mais que 15 minutos</strong> para responder às consequentes exigências da administração.</li>
+              <li><strong>2.4.</strong> <strong>Descumprir os prazos estipulados</strong> pode resultar em <strong>banimento permanente</strong> do jogador.</li>
+            </ul>
+            <h4>3. Procedimento de telagem</h4>
+            <ul>
+              <li><strong>3.1.</strong> O jogador, ao iniciar o contato com a administração, deverá seguir as instruções para ser <strong>telado via Echo e AnyDesk</strong>.
+                <ul><li><strong>3.1.1.</strong> Os arquivos são <strong>benignos, sem risco ao computador</strong>, com documentação disponível online.</li></ul>
+              </li>
+              <li><strong>3.2.</strong> O jogador deve <strong>manter contato com a administração durante todo o processo</strong>.</li>
+            </ul>
+            <h4>4. Decisões após a telagem</h4>
+            <ul>
+              <li><strong>4.1.</strong> <strong>Liberação</strong>, se não houver observância de arquivos maliciosos.</li>
+              <li><strong>4.2.</strong> <strong>Banimento permanente</strong>, se observados:
+                <ul>
+                  <li><strong>4.2.1.</strong> Softwares desinstalados;</li>
+                  <li><strong>4.2.2.</strong> Computador reiniciado ou formatado;</li>
+                  <li><strong>4.2.3.</strong> Arquivos suspeitos apagados;</li>
+                  <li><strong>4.2.4.</strong> Rastros de scripts ou programas proibidos;</li>
+                  <li><strong>4.2.5.</strong> Interrupção de processos nativos;</li>
+                  <li><strong>4.2.6.</strong> O item 4.2.5 consiste em casos como <strong>Windows Otimizados</strong> (versões não oficiais) que visam desativar processos suspeitos e afins;</li>
+                  <li><strong>4.2.7.</strong> Acesso em Discord de cheat.</li>
+                </ul>
+              </li>
+            </ul>
+            <h4>5. Recusa da telagem</h4>
+            <p>Jogadores que <strong>recusarem a telagem</strong> serão <strong>banidos por suspeita de cheat</strong>.</p>
+            <h4>6. Sigilo e divulgação</h4>
+            <ul>
+              <li><strong>6.1.</strong> O Vila Carioca <strong>não divulga os resultados das telagens</strong>, tampouco <strong>armazena dados</strong> relativos a elas, utilizando isso apenas como medida para proteger os interesses da comunidade.
+                <ul>
+                  <li><strong>6.1.1.</strong> <strong>Exceção:</strong> nos casos em que o jogador de má-fé <strong>tentar difamar o servidor</strong> após o banimento, o Vila Carioca poderá divulgar, por meio de suas redes, que <strong>determinado jogador foi banido por uso de softwares maliciosos</strong>.</li>
+                  <li><strong>6.1.2.</strong> Esta medida será tomada apenas em <strong>casos excepcionais</strong>, com o objetivo de <strong>proteger a imagem do servidor</strong>.</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="callout callout-info"><span class="callout-icon" aria-hidden="true">i</span><p>O Vila Carioca preza tanto pela <strong>transparência</strong> quanto pela <strong>segurança e preservação da imagem</strong> dos seus jogadores e ex-jogadores. Essas regras visam criar um ambiente <strong>justo e sadio</strong> para todos.</p></div>
+          </section>
+
+          <section class="chapter" id="discord" aria-labelledby="t-discord">
+            <header class="chapter-head"><span class="kicker">/01 · COMUNIDADE</span><h2 id="t-discord">REGRAS DO <em>DISCORD</em></h2></header>
+            <p>Regras para contato e uso dos canais no Discord.</p>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>O contato com membros da staff via <strong>mensagem direta</strong> deve ser feito de forma <strong>clara e objetiva</strong>, explicando desde o início o <strong>motivo do contato</strong> e qual a sua <strong>dúvida ou necessidade</strong>, para que possamos agilizar o atendimento.</div></li>
+              <li><span class="rule-num">2</span><div>É <strong>proibido fazer qualquer tipo de divulgação não autorizada</strong> no <strong>chat geral do Discord</strong>. Divulgações devem ser feitas <strong>apenas em salas destinadas a isso</strong>.</div></li>
+              <li><span class="rule-num">3</span><div>É <strong>proibido utilizar canais específicos para fins aos quais eles não foram destinados</strong>. <em>(Exemplo: a sala de divulgação não deve ser utilizada como bate-papo.)</em></div></li>
+              <li><span class="rule-num">4</span><div>Denúncias ou reports de bugs devem ser feitos mediante <strong>vídeo</strong> e <strong>explicação do ocorrido</strong>, <strong>pelo ticket</strong>.</div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="personagem" aria-labelledby="t-personagem">
+            <header class="chapter-head"><span class="kicker">/02 · PERSONAGEM</span><h2 id="t-personagem">REGRAS DE <em>PERSONAGEM</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>Os personagens <strong>não devem conter nomes de cunho ofensivo</strong>, que <strong>não tenham relação</strong> ou que <strong>não condizem com a história e/ou interpretação</strong> do personagem.</div></li>
+              <li><span class="rule-num">2</span><div>Personagens adicionais <strong>não poderão compartilhar</strong> nenhum <strong>item, dinheiro, carro</strong>, tampouco <strong>ter relação de parentesco</strong> com seu personagem principal.</div></li>
+              <li><span class="rule-num">3</span><div>Os que forem setados em facções e tiverem segundo personagem na polícia <strong>não poderão logar no personagem</strong> caso a facção do personagem principal esteja participando de uma guerra — <strong>mesmo que ele tenha morrido</strong>. O personagem secundário <strong>só poderá ser utilizado ao fim da guerra</strong>.</div></li>
+              <li><span class="rule-num">4</span><div>Os personagens que forem setados em facções e <strong>saírem da mesma por qualquer motivo</strong> (PD, escolha própria, motivos pessoais, entre outros) <strong>não poderão regressar a essa facção ou juntar-se a outras</strong> por um prazo mínimo de <strong>15 (quinze) dias corridos</strong>.</div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="gerais" aria-labelledby="t-gerais">
+            <header class="chapter-head"><span class="kicker">/03 · GERAL</span><h2 id="t-gerais">REGRAS <em>GERAIS</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>A discriminação é proibida expressamente, como consta no art. 3º, IV da Constituição Federal, onde se dispõe que, entre os objetivos fundamentais da República Federativa do Brasil, está: promover o bem de todos, sem preconceitos de origem, raça, sexo, cor, idade e quaisquer outras formas de discriminação.</div></li>
+              <li><span class="rule-num">2</span><div>Não é permitido sair do roleplay sob nenhuma circunstância.</div></li>
+              <li><span class="rule-num">3</span><div>É proibido fazer chamados para qualquer serviço com intuito de sequestrar, roubar ou emboscar alguém que esteja em serviço.</div></li>
+              <li><span class="rule-num">4</span><div>Toda ação que ocorra no servidor, seja contendo PvP ou não, deve ser gravada e apresentada a um administrador, caso solicitada. <em>Por exemplo: ações fechadas, ações de rua, guerras entre facções, RP de cobranças, sequestros etc.</em>
+                <ul>
+                  <li><strong>4.1.</strong> A gravação deve ser feita de forma completa, ou seja, <strong>sem cortes</strong>, além de <strong>conter áudio</strong>.</li>
+                  <li><strong>4.2.</strong> A gravação deve ser arquivada por <strong>no mínimo 48 horas</strong>.</li>
+                </ul>
+              </div></li>
+              <li><span class="rule-num">5</span><div>Em caso de policiais sequestrados, eles podem sim ter alguns pertences subtraídos: celular e rádio. Caso algum armamento seja retirado dos policiais, os mesmos precisam ser entregues para algum administrador ao fim do roleplay.</div></li>
+              <li><span class="rule-num">6</span><div>Você não pode pegar uma pessoa nocauteada, reanimá-la e obrigá-la a passar informação, roubá-la ou qualquer outra ação.</div></li>
+              <li><span class="rule-num">7</span><div>É extremamente proibido qualquer RP envolvendo assédio, importunação sexual, racismo, preconceito, homofobia, xenofobia ou suicídio.</div></li>
+              <li><span class="rule-num">8</span><div>Estando em serviço legal, fica proibido qualquer tipo de atividade ilegal.</div></li>
+              <li><span class="rule-num">9</span><div>Após ser nocauteado propositalmente por outra pessoa, você esquece de todo o ocorrido automaticamente, mesmo que seja reanimado.</div></li>
+              <li><span class="rule-num">10</span><div>As armas de caça são de uso exclusivo da profissão de caçador. O uso da arma fora dessa profissão acarreta em <strong>banimento indeterminado</strong> do servidor.</div></li>
+              <li><span class="rule-num">11</span><div>Quantidade máxima permitida de pessoas no porta-malas de veículos: <strong>duas (2)</strong>.</div></li>
+              <li><span class="rule-num">12</span><div>É proibido todo e qualquer tipo de comercialização de itens VIP.</div></li>
+              <li><span class="rule-num">13</span><div>É proibido <strong>Metagaming</strong>, <strong>RDM</strong>, <strong>VDM</strong>, <strong>Combat Logging</strong>, <strong>Power-RP</strong>, <strong>falta de amor à vida</strong>, <strong>Anti-RP</strong>, <strong>cheating</strong> e <strong>abuso de bugs</strong>.</div></li>
+              <li><span class="rule-num">14</span><div>É proibido fazer qualquer tipo de <strong>modificações visuais e sonoras</strong> de maneira que obtenha alguma vantagem em relação à configuração padrão ou que interfiram diretamente na dinâmica do roleplay. <strong>Exemplos proibidos:</strong>
+                <ul>
+                  <li>Modificar citizen (remover a noite, água, confete);</li>
+                  <li>Utilizar mods gráficos que removem itens/props;</li>
+                  <li>Mods de armas (alterar cores e modelos);</li>
+                  <li>Mods de som que alteram os passos.</li>
+                </ul>
+                Mods gráficos que <strong>melhoram a qualidade visual</strong> são permitidos.
+              </div></li>
+              <li><span class="rule-num">15</span><div>Proibida aliança de qualquer facção em <strong>ações de rua e resgates</strong>.
+                <ul><li><strong>15.1.</strong> Permitida a aliança <strong>em ações fechadas</strong>.</li></ul>
+              </div></li>
+              <li><span class="rule-num">16</span><div>Fica proibido atirar no corpo de jogadores que já estejam desmaiados. Todo e qualquer disparo realizado no corpo de um rival será considerado flame e estará sujeito a punição.</div></li>
+            </ol>
+            <h3>Regras complementares</h3>
+            <ul>
+              <li>O jogador que for morto em uma troca de tiro <strong>fica impedido de voltar para resgatar corpos ou carros</strong>, independentemente de vestimenta ou modo com que foi resgatado.</li>
+              <li>Ao cair em uma ação de rua, o jogador <strong>fica proibido de voltar a interagir com a mesma</strong>, sob qualquer circunstância.</li>
+              <li>Durante qualquer ação que envolva troca de tiro (<strong>guerra, treta de rua, sequestro etc.</strong>), os jogadores <strong>não podem remover a roupa da facção</strong> para fins de recuperação de corpos e/ou outros. A identidade da facção deve ser mantida em todas as circunstâncias.</li>
+              <li>O jogador <strong>não setado</strong> em uma facção <strong>só poderá participar de atividades ligadas a roleplay</strong>, ficando proibido de participar de tretas de rua, guerras etc., <strong>mesmo que seja para trocar tiro, resgatar corpo/carro ou qualquer outra interação</strong>.</li>
+              <li>O sistema de <strong>HP ilegal</strong> deve ser utilizado como recurso primário para evitar a necessidade de resgatar corpos após incidentes na rua (guerras, tretas, entre outros).</li>
+              <li>Fica proibida a utilização de <strong>qualquer veículo alugado</strong> para realizar ações de fuga, troca de tiro, entre outras. Isso inclui o <strong>helicóptero de aluguel</strong>, cujo único objetivo é transporte.</li>
+            </ul>
+            <div class="callout callout-danger"><span class="callout-icon" aria-hidden="true">⚠</span><p><strong>Proibida a desova de corpo.</strong></p></div>
+          </section>
+
+          <section class="chapter" id="metagaming" aria-labelledby="t-metagaming">
+            <header class="chapter-head"><span class="kicker">/04 · INFRAÇÃO</span><h2 id="t-metagaming"><em>METAGAMING</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>É <strong>estritamente proibido o uso de informações obtidas fora do ambiente do roleplay (fora do jogo)</strong> para beneficiar, influenciar ou modificar qualquer ação dentro do servidor. <em>Exemplo: utilizar informações de transmissões ao vivo (streams), conversas em Discord, chats privados ou qualquer outro meio externo para descobrir a localização de alguém, antecipar ações, identificar personagens ou tomar decisões em RP.</em></div></li>
+            </ol>
+            <h3>Casos comuns de Metagaming</h3>
+            <ol class="rules">
+              <li><span class="rule-num">2</span><div>Observar uma stream de outro jogador para saber onde ele está, o que está fazendo ou com quem está interagindo, e usar essa informação dentro do jogo.</div></li>
+              <li><span class="rule-num">3</span><div>Receber informações por mensagem (Discord, WhatsApp etc.) durante uma ação e utilizá-las imediatamente no jogo.</div></li>
+              <li><span class="rule-num">4</span><div>Se organizar para encontrar amigos ou inimigos usando GPS ou locais combinados fora do RP (como "vem aqui na praça" dito no Discord).</div></li>
+              <li><span class="rule-num">5</span><div>Chamar reforço ou aliados usando meios de comunicação fora do jogo, sem realizar o contato via rádio ou celular dentro do RP.</div></li>
+              <li><span class="rule-num">6</span><div>Sair do personagem para falar frases como: <em>"Vim aqui porque vi na live que você tava aqui."</em>, <em>"Meu amigo me disse que você estava nessa quebrada."</em> ou <em>"Vi você no Discord e vim aqui."</em></div></li>
+            </ol>
+            <div class="callout callout-danger"><span class="callout-icon" aria-hidden="true">⚠</span><p>Todas essas situações <strong>configuram Metagaming</strong> e podem resultar em <strong>punições severas</strong>, como <strong>banimento temporário ou permanente</strong>, dependendo da gravidade.</p></div>
+          </section>
+
+          <section class="chapter" id="rdm" aria-labelledby="t-rdm">
+            <header class="chapter-head"><span class="kicker">/05 · INFRAÇÃO</span><h2 id="t-rdm">RANDOM DEATHMATCH <em>(RDM)</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div><strong>RDM (Random Death Match)</strong> é a prática de <strong>matar outro jogador sem motivo coerente ou contexto válido dentro do roleplay</strong>. Ou seja, é quando um jogador mata outro <strong>sem justificativa narrativa</strong>, apenas pelo desejo de matar ou gerar confusão.</div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="vdm" aria-labelledby="t-vdm">
+            <header class="chapter-head"><span class="kicker">/06 · INFRAÇÃO</span><h2 id="t-vdm">VEHICLE DEATHMATCH <em>(VDM)</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>É a ação de usar veículos como arma para matar ou atropelar alguém propositalmente.</div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="cl" aria-labelledby="t-cl">
+            <header class="chapter-head"><span class="kicker">/07 · INFRAÇÃO</span><h2 id="t-cl">COMBAT LOGGING <em>(CL)</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div><strong>Deslogar durante uma ação</strong> em que você esteja participando <strong>direta ou indiretamente</strong> é <strong>proibido</strong>. Não é permitido deslogar apenas por <strong>medo de ser abordado</strong> pela polícia/assaltante ou durante ações como:
+                <ul>
+                  <li>Sequestro;</li>
+                  <li>Fuga;</li>
+                  <li>Troca de tiros;</li>
+                  <li>Transporte para o presídio;</li>
+                  <li>Entre outras situações similares.</li>
+                </ul>
+              </div></li>
+            </ol>
+            <div class="callout callout-info"><span class="callout-icon" aria-hidden="true">i</span><p><strong>Obs.:</strong> em caso de <strong>crash</strong> durante uma ação em que o <strong>PvP já tenha sido iniciado</strong>, o jogador deve <strong>voltar para o servidor e sair da ação imediatamente</strong>. Além disso, deve <strong>reportar o crash no canal específico no Discord</strong>.</p></div>
+          </section>
+
+          <section class="chapter" id="pd" aria-labelledby="t-pd">
+            <header class="chapter-head"><span class="kicker">/08 · PERSONAGEM</span><h2 id="t-pd">PERMA DEATH <em>(PD)</em></h2></header>
+            <h3>Existem dois tipos de PD</h3>
+            <ul>
+              <li><strong>PD da Facção:</strong> é quando você morre para ser retirado da sua facção e é obrigado a esquecer tudo relacionado à facção e às pessoas nela.</li>
+              <li><strong>PD do Personagem:</strong> é quando você fez algo gravíssimo e perdeu definitivamente o seu personagem. É sobre ele que falamos a seguir.</li>
+            </ul>
+            <div class="callout callout-info"><span class="callout-icon" aria-hidden="true">i</span><p>Você não teve amor à sua vida, o bem mais sagrado que você possui, e infelizmente seu personagem vai partir dessa pra melhor e você nunca mais poderá jogar com ele novamente.</p></div>
+            <p>O <strong>PD do Personagem</strong> é respeitado na maioria das cidades, entre quem realmente sabe respeitar a história do personagem, e tem alguns outros que metem o louco e ressurgem igual uma fênix.</p>
+            <div class="callout callout-danger"><span class="callout-icon" aria-hidden="true">⚠</span><p>Na Vila Carioca, aparecer com o mesmo personagem que tomou PD é <strong>BAN INDETERMINADO</strong>. Se fizer um novo personagem com as mesmas características, ou com qualquer vínculo relacionado ao personagem que tomou PD, você será punido com <strong>BAN INDETERMINADO</strong>.</p></div>
+            <h3>Motivos que levam um personagem a tomar PD</h3>
+            <p>Qualquer indício de <strong>falta de amor à vida</strong> vai te fazer perder o direito de manter o personagem:</p>
+            <dl class="faq">
+              <div><dt>Pode dar motivos para os seus sequestradores te matarem?</dt><dd>Não, você deve convencer eles de que você merece viver.</dd></div>
+              <div><dt>Pode dar de herói tentando trocar tiro contra um rival que está em clara maioria numérica armada?</dt><dd>Não. Se estiver nítido que o rival está em maioria numérica armada, você não é o 007 pra sair matando todo mundo.</dd></div>
+              <div><dt>Pode ficar usando rádio e celular na frente dos sequestradores, sem autorização deles?</dt><dd>Não, você valoriza a sua vida e não tem coragem de fazer qualquer coisa que possa fazer os sequestradores te matarem.</dd></div>
+              <div><dt>Qualquer outra situação não citada aqui é permitida?</dt><dd>Não, apenas citamos exemplos para deixar bem clara a linha de raciocínio.</dd></div>
+              <div><dt>Eu fiz uma situação anti-amor à vida e fiquei vivo, o que acontece?</dt><dd>Tudo bem: se você não morreu, segue o jogo, teve sorte. Mas, se morresse, teria consciência de que teria tido o PD autorizado pela administração.</dd></div>
+              <div><dt>Fui sequestrar o cara e ele desrespeitou todo mundo com arma na cara. Posso pedir o PD?</dt><dd>Sim, pode solicitar à Administração, que vai analisar tudo e decidir se foi motivo de PD ou não.</dd></div>
+              <div><dt>Um bandido perdeu a fuga, estava com 5 policiais apontando a arma pra ele e mesmo assim puxou a arma e atirou. É caso de PD?</dt><dd>Sim, se ele morrer, vai tomar PD. Se conseguir fazer mágica, matar todo mundo e sair vivo, segue o jogo.</dd></div>
+              <div><dt>As pessoas podem se revoltar com a morte de quem tomou PD e cobrar?</dt><dd>Não, quem tomou PD foi punido administrativamente e você não deve prosseguir um RP de cobrança.</dd></div>
+              <div><dt>Se, durante o RP de sequestro, os sequestradores fizerem um RP para que você faça algo no celular e deixarem claro que estão olhando, vou tomar PD se fizer o contrário?</dt><dd>Você deve fazer exatamente o que eles estão falando. Se os sequestradores te denunciarem e a administração investigar a situação, caso você tenha feito o contrário do que o RP propôs, terá o PD autorizado.</dd></div>
+            </dl>
+          </section>
+
+          <section class="chapter" id="amor" aria-labelledby="t-amor">
+            <header class="chapter-head"><span class="kicker">/09 · ROLEPLAY</span><h2 id="t-amor">AMOR À <em>VIDA</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>O princípio de <strong>Amor à Vida</strong> é fundamental no roleplay. Todo jogador deve <strong>agir como agiria na vida real em situações de risco</strong>, sempre <strong>valorizando sua própria vida e a dos demais personagens</strong>.</div></li>
+            </ol>
+            <h3>O que configura quebra de Amor à Vida</h3>
+            <ol class="rules">
+              <li><span class="rule-num">2</span><div>Reagir a um assalto com <strong>duas ou mais pessoas apontando armas para você</strong>, mesmo sem chance real de escapar.</div></li>
+              <li><span class="rule-num">3</span><div>Sacar ou atirar com arma em situações em que você está <strong>em clara desvantagem numérica ou estratégica</strong>.</div></li>
+              <li><span class="rule-num">4</span><div>Usar rádio ou celular <strong>durante sequestros ou sob mira</strong>, sem autorização dos sequestradores.</div></li>
+              <li><span class="rule-num">5</span><div>Ameaçar, provocar ou afrontar alguém visivelmente armado sem ter suporte ou motivo coerente no RP.</div></li>
+              <li><span class="rule-num">6</span><div>Agir com imprudência extrema, como tentar fugir pulando de locais muito altos, atravessar áreas controladas por facções rivais sem planejamento ou correr em direção a um tiroteio sem estar envolvido.</div></li>
+            </ol>
+            <div class="callout callout-danger"><span class="callout-icon" aria-hidden="true">⚠</span><p><strong>Consequência:</strong> a quebra dessa regra poderá resultar em <strong>PD (permadeath)</strong> — morte permanente do personagem — além de <strong>punições administrativas</strong>.</p></div>
+            <div class="callout callout-info"><span class="callout-icon" aria-hidden="true">i</span><p>Sempre se pergunte: <strong>"Eu faria isso se fosse minha vida real?"</strong> Se a resposta for <strong>não</strong>, então <strong>não faça no RP</strong>. O Amor à Vida mantém a imersão e o respeito pelas histórias dentro do servidor.</p></div>
+          </section>
+
+          <section class="chapter" id="antirp" aria-labelledby="t-antirp">
+            <header class="chapter-head"><span class="kicker">/10 · ROLEPLAY</span><h2 id="t-antirp">ANTI <em>ROLEPLAY</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>Ter condutas que vão contra o bom andamento do roleplay, ou tomar atitudes que vão contra a história do seu personagem.</div></li>
+              <li><span class="rule-num">2</span><div>É proibido <strong>qualquer ato de corrupção</strong> na Polícia ou no Hospital.</div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="flaming" aria-labelledby="t-flaming">
+            <header class="chapter-head"><span class="kicker">/11 · CONDUTA</span><h2 id="t-flaming"><em>FLAMING</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>O flame é o ato de querer atingir deliberadamente outro jogador de maneira física e/ou verbal. É proibido o flame direcionado ao jogador (pessoa) que envolva questões externas (fora do RP). Os xingamentos ao personagem (dentro do RP) que tenham contexto nos acontecimentos do roleplay não são considerados flame. Cada denúncia será analisada de forma individual, levando em consideração o histórico e o bom senso.</div></li>
+              <li><span class="rule-num">2</span><div>Não será permitido atingir outro jogador por meio de referências ofensivas a pessoas próximas, vida pessoal, relacionamentos ou familiares. O foco do RP deve permanecer nos personagens envolvidos na situação.</div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="safezones" aria-labelledby="t-safezones">
+            <header class="chapter-head"><span class="kicker">/12 · MAPA</span><h2 id="t-safezones"><em>SAFEZONES</em></h2></header>
+            <div class="stats">
+              <div class="stat"><strong>1</strong><span>Hospital</span></div>
+              <div class="stat"><strong>2</strong><span>Praça</span></div>
+              <div class="stat"><strong>3</strong><span>Mecânica (Sul)</span></div>
+              <div class="stat"><strong>4</strong><span>Mecânica (Norte)</span></div>
+            </div>
+          </section>
+
+          <section class="chapter" id="pg" aria-labelledby="t-pg">
+            <header class="chapter-head"><span class="kicker">/13 · INFRAÇÃO</span><h2 id="t-pg">POWER GAMING <em>(PG)</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>É expressamente proibido <strong>utilizar veículos para causar danos</strong>, como colidir, rodar ou capotar intencionalmente outros veículos. O famoso <strong>"bate-bate"</strong> está vetado, e essa prática passa a ser considerada <strong>VDM</strong> e <strong>Power Gaming</strong>, podendo resultar em <strong>punições severas</strong>. O jogador que fizer uso dessa prática estará sujeito à <strong>remoção por TEMPO INDETERMINADO da AL</strong>.
+                <ul>
+                  <li><strong>Ou seja:</strong> se você está perseguindo alguém e bate intencionalmente no carro da outra pessoa com o objetivo de <strong>capotá-lo</strong> ou <strong>quebrá-lo para obter vantagem</strong>, você estará quebrando essa regra e será punido.</li>
+                  <li>Desculpas como <strong>"foi vento"</strong> não serão aceitas, salvo os casos em que forem <strong>nítidos os problemas de conexão</strong>, a depender da <strong>interpretação única e exclusiva da administração</strong>.</li>
+                </ul>
+              </div></li>
+              <li><span class="rule-num">2</span><div>Fica permitido apenas o uso de <strong>caminhonetes, SUVs e motos de trilha específicas</strong> para subir montanhas e terrenos irregulares. Algumas <strong>motocicletas permitidas</strong> incluem modelos como: <strong>Tiger</strong>, <strong>motos da Polícia</strong>, <strong>R1200</strong>, <strong>Sanchez</strong>, <strong>Manchez</strong>, entre outras.
+                <ul>
+                  <li>Outros veículos <strong>não estão autorizados</strong> a ser conduzidos off-road e serão enquadrados como <strong>Power Gaming</strong>, <strong>sem ressalvas</strong>.</li>
+                  <li>Qualquer jogador que utilizar veículos <strong>não condizentes com o terreno</strong> em que está circulando estará sujeito à <strong>perda temporária ou permanente de sua AL</strong>.</li>
+                </ul>
+              </div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="prp" aria-labelledby="t-prp">
+            <header class="chapter-head"><span class="kicker">/14 · INFRAÇÃO</span><h2 id="t-prp">POWER <em>ROLEPLAY</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>Forçar alguma interação não prevista ou adequada no RP. <em>Exemplo: forçar abordagens policiais, arrancar o dedo de um refém etc.</em></div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="copbait" aria-labelledby="t-copbait">
+            <header class="chapter-head"><span class="kicker">/15 · INFRAÇÃO</span><h2 id="t-copbait">COP <em>BAIT</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>É proibido efetuar chamado para qualquer tipo de serviço (polícia, hospital, táxis, entre outros) com intuito de sequestrar, matar e/ou realizar qualquer ação do gênero com quem atendeu o chamado.</div></li>
+              <li><span class="rule-num">2</span><div>É proibido Cop Bait para locais públicos, tais como portos, aeroportos, ruas, praças, garagens, estabelecimentos, dentre outros.</div></li>
+            </ol>
+            <div class="callout callout-info"><span class="callout-icon" aria-hidden="true">i</span><p><strong>Observação:</strong> a fuga até a <strong>favela</strong> não é considerada cop bait caso os policiais sejam abatidos dentro do perímetro da mesma pelos faccionados.</p></div>
+          </section>
+
+          <section class="chapter" id="darkrp" aria-labelledby="t-darkrp">
+            <header class="chapter-head"><span class="kicker">/16 · INFRAÇÃO</span><h2 id="t-darkrp">DARK <em>ROLEPLAY</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>A prática de <strong>Dark RP</strong>, ou seja, interpretações de papéis sombrios/indesejados — muitos considerados criminosos — é <strong>inaceitável no servidor</strong> e culmina <strong>intransigentemente em BANIMENTO INDETERMINADO</strong>. <em>Exemplos: assédio, LGBTQIA+fobia, terrorismo, suicídio, tortura, racismo e muitos outros.</em></div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="pichacao" aria-labelledby="t-pichacao">
+            <header class="chapter-head"><span class="kicker">/17 · CIDADE</span><h2 id="t-pichacao">REGRAS DE <em>PICHAÇÃO</em></h2></header>
+            <p>A pichação foi uma funcionalidade adicionada no servidor com o intuito de <strong>estimular o RP</strong> e como forma de as <strong>facções e jogadores deixarem suas marcas na cidade</strong>. Isto é, as pichações <strong>não devem possuir ligação com fatos externos ao jogo</strong> e <strong>muito menos fazer alusão a crimes reais</strong>.</p>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>As pichações <strong>DEVEM</strong> possuir ligação com o que acontece <strong>no roleplay e dentro do servidor</strong>, salvo raríssimas exceções.</div></li>
+              <li><span class="rule-num">2</span><div>O ato de pichar qualquer lugar da cidade <strong>fazendo apologia a facções criminosas</strong> ou <strong>alusão a qualquer outro ato ilícito previsto na legislação brasileira</strong> é inaceitável no servidor e culmina <strong>intransigentemente em BANIMENTO INDETERMINADO</strong>.</div></li>
+              <li><span class="rule-num">3</span><div>É terminantemente proibido <strong>ferir a honra de outro jogador de qualquer maneira</strong>, especialmente por meio das pichações.</div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="venda" aria-labelledby="t-venda">
+            <header class="chapter-head"><span class="kicker">/18 · ECONOMIA</span><h2 id="t-venda">REGRAS DE <em>VENDA DE ITENS</em></h2></header>
+            <h3>1. Introdução</h3>
+            <p>Esta regra tem como objetivo manter a integridade e a equidade no ambiente de jogo para todos os nossos jogadores. Para garantir uma experiência justa e equilibrada, a venda de quaisquer itens do jogo — incluindo, mas não se limitando a, casas, dinheiro, veículos e itens (consumíveis ou não) — por dinheiro real é estritamente proibida neste servidor.</p>
+            <p>Esta medida visa preservar a diversão e a competitividade do jogo, bem como proteger os interesses dos nossos jogadores que pretendem uma empreitada legítima, algo que valorizamos muito.</p>
+            <h3>2. Definições</h3>
+            <ul>
+              <li><strong>2.1. Itens do jogo:</strong> refere-se a todos os elementos, bens, propriedades ou recursos disponíveis no ambiente de jogo, sejam eles físicos ou virtuais, que podem ser adquiridos, possuídos ou utilizados pelos jogadores no contexto do jogo.</li>
+              <li><strong>2.2. Venda de itens do jogo:</strong> qualquer atividade que envolva a troca ou venda de itens do jogo, independentemente do valor ou moeda utilizada, em troca de dinheiro real ou qualquer forma de pagamento externa ao jogo.</li>
+              <li><strong>2.3. Servidor:</strong> refere-se à Vila Carioca de maneira geral (servidor no FiveM, Discord, redes sociais etc.).</li>
+            </ul>
+            <h3>3. Proibição da venda de itens do jogo</h3>
+            <p>É expressamente proibida a venda de quaisquer itens do jogo, incluindo casas, dinheiro, veículos e itens (consumíveis ou não), por dinheiro real ou qualquer forma de pagamento externa ao servidor.</p>
+            <h3>4. Punição por violação</h3>
+            <ul>
+              <li><strong>4.1.</strong> Os jogadores que forem identificados vendendo itens do jogo por dinheiro real, ou que se envolverem em transações dessa natureza, estarão sujeitos à punição.</li>
+              <li><strong>4.2.</strong> A punição para a violação desta regra será o <strong>banimento indeterminado</strong> do servidor, o que resultará na <strong>perda definitiva da allowlist</strong>.</li>
+            </ul>
+            <h3>5. Relatórios e denúncias</h3>
+            <p>Encorajamos nossos jogadores a relatarem qualquer atividade suspeita relacionada à venda de itens do jogo aos administradores da Vila Carioca. Qualquer denúncia do gênero será tratada com <strong>confidencialidade</strong> e utilizada para <strong>investigações internas</strong>, assim como as demais.</p>
+            <h3>6. Considerações finais</h3>
+            <p>Esta regra é essencial para manter o ambiente da Vila Carioca justo e de mútuo bem-estar, onde todos os jogadores tenham a mesma oportunidade de progredir e se divertir. A venda de itens do jogo por dinheiro real <strong>desequilibra a experiência</strong> e <strong>prejudica a NOSSA comunidade</strong>.</p>
+            <p>A administração da Vila Carioca se reserva o direito de <strong>alterar ou atualizar esta regra a qualquer momento</strong>, a fim de manter a integridade do servidor. Os jogadores são incentivados a <strong>revisar periodicamente as regras</strong> do servidor para estarem cientes de qualquer mudança.</p>
+          </section>
+
+          <section class="chapter" id="celular" aria-labelledby="t-celular">
+            <header class="chapter-head"><span class="kicker">/19 · ROLEPLAY</span><h2 id="t-celular">REGRAS DO <em>CELULAR</em></h2></header>
+            <p>Regras sobre o uso e o acesso ao celular entre jogadores.</p>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div><strong>Permissão para pegar o celular de outro jogador:</strong> é permitido pegar o celular de outro jogador desde que haja uma <strong>justificativa válida</strong> e uma <strong>interação de roleplay adequada</strong>. <em>Exemplo: pegar o celular de um jogador sequestrado ou rendido para evitar sua comunicação.</em> Caso o jogador se recuse a entregar o celular, será considerado <strong>falta de amor à vida</strong>, e a <strong>morte permanente do personagem (PD)</strong> será analisada.</div></li>
+              <li><span class="rule-num">2</span><div><strong>Permissão para acessar o celular de outro jogador:</strong> é permitido acessar o celular de outro jogador desde que haja um <strong>motivo real e fundamentado</strong> e uma <strong>interação de roleplay adequada</strong>. O acesso ao celular deve ser uma <strong>consequência do roleplay</strong>, não a causa. <em>Exemplo: sequestrar alguém que não está colaborando ou que cometeu algum erro que justifique acessar o celular para verificar determinada informação.</em> <strong>É proibido sequestrar alguém apenas para acessar o celular sem uma justificativa adequada.</strong></div></li>
+              <li><span class="rule-num">3</span><div><strong>Obrigação de fornecer a senha de acesso:</strong> ao ter o celular roubado em uma situação em que você está rendido, é <strong>obrigatório fornecer a senha de acesso</strong> ao seu celular. Passar uma senha errada ou se recusar a fornecer a senha implica assumir o risco de <strong>morte permanente (PD)</strong> do seu personagem.</div></li>
+              <li><span class="rule-num">4</span><div><strong>Proibição de transações não autorizadas:</strong> é estritamente proibido usar o acesso ao celular para <strong>realizar transações com a conta do jogador</strong> ou exigir que ele o faça. Em casos de roleplay envolvendo <strong>cobrança de dívida</strong>, a administração deve ser informada para que o roleplay seja autorizado.</div></li>
+              <li><span class="rule-num">5</span><div><strong>Acesso policial ao celular:</strong> para a polícia acessar o celular de um jogador, é necessário o <strong>consentimento do jogador</strong> ou um <strong>mandado</strong>. A solicitação deve ser feita pelo <strong>comando da Polícia</strong> e autorizada pela administração.</div></li>
+              <li><span class="rule-num">6</span><div><strong>Uso do celular pelo proprietário:</strong> o celular é uma ferramenta para ampliar as possibilidades de roleplay e faz parte de um universo virtual (não real). Portanto, todo e qualquer uso do celular precisa se limitar ao universo do jogo e dos personagens. É estritamente proibido usar, postar, armazenar etc. qualquer coisa que não esteja completamente inserida no universo da <strong>Vila Carioca (RP)</strong>. É de única e exclusiva responsabilidade do jogador manter o conteúdo do seu celular dentro das regras.</div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="faccoes" aria-labelledby="t-faccoes">
+            <header class="chapter-head"><span class="kicker">/20 · FACÇÕES</span><h2 id="t-faccoes">FACÇÕES E <em>CRIAÇÃO DE CONTEÚDO</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div><strong>Uniforme de guerra:</strong> durante qualquer ação de rua PvP, todas as facções envolvidas devem estar uniformizadas com os seus respectivos uniformes de guerra. Esta é uma medida indispensável e visa evitar o RDM (Random Deathmatch). Os jogadores que não estiverem trajados com os seus uniformes corretos estão sujeitos a punições in-game e administrativas.
+                <ul><li><strong>1.1.</strong> Nos casos em que houver junção de facções, o uniforme a ser utilizado deverá ser o da facção que iniciou a ação.</li></ul>
+              </div></li>
+              <li><span class="rule-num">2</span><div>Proibida a junção de facções sem que haja autorização prévia da ADM.</div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="helicoptero" aria-labelledby="t-helicoptero">
+            <header class="chapter-head"><span class="kicker">/21 · VEÍCULOS</span><h2 id="t-helicoptero">REGRAS DO <em>HELICÓPTERO</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>O helicóptero só pode ser utilizado e manuseado por aqueles competentes para tal, habilitados com brevê da categoria. Pilotos não habilitados estão sujeitos a multa e PD em caso de acidente.</div></li>
+              <li><span class="rule-num">2</span><div>O helicóptero deverá pousar apenas em locais adequados. Caso contrário, o piloto está sujeito a multa, perda da licença e até mesmo punições administrativas.</div></li>
+              <li><span class="rule-num">3</span><div>A utilização dos helicópteros está sujeita às normas de táxi-aéreo (ex.: trafegar na altura adequada, não fazer manobras arriscadas, entre outras). Caso o piloto desobedeça essas normas, estará sujeito a punições rígidas, incluindo multas severas, perda da licença e punições administrativas.</div></li>
+              <li><span class="rule-num">4</span><div>Sob hipótese alguma pode-se passar a placa em um helicóptero. Será tratado como abuso de comando e conduta Anti-RP, acarretando punições severas.</div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="negociacao" aria-labelledby="t-negociacao">
+            <header class="chapter-head"><span class="kicker">/22 · AÇÕES</span><h2 id="t-negociacao">REGRAS DE <em>NEGOCIAÇÃO</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>Cada refém te dá direito a uma <strong>única</strong> requisição, ou seja, um único refém não te dá direito de pedir para retirar o atirador <strong>e</strong> uma fuga limpa. <em>Exemplo: um refém será trocado para retirar o atirador do helicóptero.</em></div></li>
+              <li><span class="rule-num">2</span><div>Não é permitida a negociação de refém por armamento ou dinheiro em nenhuma situação.</div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="pacificacao" aria-labelledby="t-pacificacao">
+            <header class="chapter-head"><span class="kicker">/23 · AÇÕES</span><h2 id="t-pacificacao">REGRAS DE <em>PACIFICAÇÃO</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>O lado derrotado da pacificação deve obrigatoriamente dar <strong>/GG</strong> ao término da ação.</div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="policia" aria-labelledby="t-policia">
+            <header class="chapter-head"><span class="kicker">/24 · CORPORAÇÃO</span><h2 id="t-policia">REGRAS DA <em>POLÍCIA</em></h2></header>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>Permitido somente o uso de armamento policial.</div></li>
+              <li><span class="rule-num">2</span><div>Proibido o uso de carros que não sejam VTRs policiais para obter vantagem.</div></li>
+              <li><span class="rule-num">3</span><div>Proibido qualquer ato de corrupção.</div></li>
+              <li><span class="rule-num">4</span><div>Limitado a <strong>3 unidades</strong> em uma perseguição, podendo ser liberado o contingente todo, sendo autorizado por um Oficial Graduado ou QRU de COD 5 ou RESGATE. <em>(3 GTMs = 1 unidade, e o GAEP não conta como unidade.)</em></div></li>
+              <li><span class="rule-num">5</span><div>Proibido retirar qualquer item do bandido sem que seja em uma unidade policial ou prisional. (Fica permitida a retirada de lockpick e armamento do saque rápido.)
+                <ul>
+                  <li>O uso de máscara está sujeito a revista sem a necessidade de cometimento de crime.</li>
+                  <li>O uso de armamento deverá ser respeitado de acordo com a patente ou unidade.</li>
+                </ul>
+              </div></li>
+              <li><span class="rule-num">6</span><div>Os policiais não estão autorizados a retornar após cair em uma ação de COD 5 para auxiliar no resgate de corpos ou na condução de criminosos. A ação deve ser resolvida dentro dos parâmetros estabelecidos.</div></li>
+              <li><span class="rule-num">7</span><div>Durante uma ação fechada, cada policial pode utilizar somente a sua smoke, não podendo transferi-la ou dropá-la.</div></li>
+            </ol>
+          </section>
+
+          <section class="chapter" id="acoes" aria-labelledby="t-acoes">
+            <header class="chapter-head"><span class="kicker">/ AÇÕES</span><h2 id="t-acoes">REGRA DE <em>AÇÕES</em></h2></header>
+            <h3>Das regras de ações</h3>
+            <ol class="rules">
+              <li><span class="rule-num">1</span><div>O uso do <strong>BOM SENSO</strong> se torna a regra mais importante em ações fechadas ou de rua. Toda e qualquer atitude não pautada no bom senso será punida com rigor.</div></li>
+              <li><span class="rule-num">2</span><div>É proibido utilizar <strong>TODO tipo de droga ilegal</strong> durante ações fechadas (metanfetamina, cocaína, oxy, seringa medicinal etc.).</div></li>
+              <li><span class="rule-num">3</span><div>É proibido o uso de <strong>capacete</strong> em qualquer tipo de ação fechada.</div></li>
+              <li><span class="rule-num">4</span><div>Proibida a utilização de <strong>qualquer arma de fogo</strong> durante as <strong>Corridas Clandestinas</strong>, no resgate ou na fuga das mesmas.</div></li>
+              <li><span class="rule-num">5</span><div>Está proibido utilizar <strong>mais de 1 colete</strong> em ações fechadas (lojas, bancos, carros-fortes etc.), <strong>sendo policial ou não</strong>.</div></li>
+              <li><span class="rule-num">6</span><div>É proibido fugir durante uma ação fechada/rua para <strong>locais com apenas uma entrada</strong>. Exemplos:
+                <ul>
+                  <li>Casa do Michael;</li>
+                  <li>Casa dos Bloods;</li>
+                  <li>Garagem do heliponto;</li>
+                  <li>Garagem do Carro Forte;</li>
+                  <li>HP ilegal do Fleeca da Praia <em>(Nióbio: no máximo 4 no fundo)</em>.</li>
+                </ul>
+              </div></li>
+              <li><span class="rule-num">7</span><div>É proibido qualquer tipo de <strong>movimentação/rotação utilizando qualquer tipo de veículo</strong>, tanto para a polícia quanto para o bandido, durante ações fechadas. <em>(Exceção: helicóptero da polícia.)</em>
+                <ul>
+                  <li><strong>7.1.</strong> Em ações fechadas: fica autorizado o <strong>uso de 2 veículos dentro do perímetro</strong>;</li>
+                  <li>fica autorizado o <strong>acesso da polícia dentro do perímetro apenas para desembarque</strong>;</li>
+                  <li><strong>permanece proibido o uso de veículos</strong> que impossibilitem o acesso da polícia em qualquer via ou interior.</li>
+                </ul>
+              </div></li>
+              <li><span class="rule-num">8</span><div>Fica liberado o comando <strong>/gg</strong> em ações fechadas e de rua, durante o período das <strong>00:00 (meia-noite) até 12:00 (meio-dia)</strong>.</div></li>
+              <li><span class="rule-num">9</span><div>Os <strong>policiais responsáveis</strong> pelo atendimento de qualquer ação deverão <strong>entrar simultaneamente no perímetro</strong> da respectiva ação, sob risco de ficarem com <strong>contingente reduzido e/ou haver punição</strong> a quem não o fizer.</div></li>
+              <li><span class="rule-num">10</span><div>Proibido o uso de <strong>gasolina como arma</strong> em qualquer ação fechada.</div></li>
+              <li><span class="rule-num">11</span><div>Fica permitido o uso do <strong>helicóptero policial</strong> para <strong>entrar sozinho no perímetro da ação por 2 minutos</strong>. Passados esses 2 minutos, é <strong>obrigatório que o restante do contingente policial entre no perímetro</strong>.</div></li>
+              <li><span class="rule-num">12</span><div>Fica proibido o uso de <strong>MTAR</strong> nos bancos de <strong>Paleto</strong> e <strong>Central</strong>, para ambos os lados.</div></li>
+              <li><span class="rule-num">13</span><div><strong>Disputa de blips:</strong> somente <strong>1 pessoa por facção</strong> pode puxar a ação, com o <strong>contingente da ação no perímetro</strong>.</div></li>
+            </ol>
+            <h3>14. Limite de ações por semana</h3>
+            <div class="stats">
+              <div class="stat"><strong>1</strong><span>Banco Central</span></div>
+              <div class="stat"><strong>1</strong><span>Paleto</span></div>
+              <div class="stat"><strong>5</strong><span>Joalherias</span></div>
+              <div class="stat"><strong>4</strong><span>Fleecas</span></div>
+            </div>
+          </section>
+
+          <section class="chapter" id="caixa-eletronico" aria-labelledby="t-caixa-eletronico">
+            <header class="chapter-head"><span class="kicker">/ AÇÕES</span><h2 id="t-caixa-eletronico">CAIXA <em>ELETRÔNICO</em></h2></header>
+            <dl class="specs">
+              <div><dt>Máximo de bandidos</dt><dd>1 veículo cheio (independente do veículo utilizado)</dd></div>
+              <div><dt>Máximo de policiais</dt><dd>Segue o procedimento da polícia</dd></div>
+              <div><dt>Armamento</dt><dd>Somente pistolas, para ambos os lados</dd></div>
+              <div><dt>QRR / reforço</dt><dd>Proibido para ambas as partes</dd></div>
+              <div><dt>Resgate</dt><dd>Permitido</dd></div>
+            </dl>
+            <div class="callout callout-warning"><span class="callout-icon" aria-hidden="true">!</span><p>Caso ocorra um resgate, fica proibida a utilização de qualquer tipo de armamento.</p></div>
+          </section>
+
+          <section class="chapter" id="caixa-registradora" aria-labelledby="t-caixa-registradora">
+            <header class="chapter-head"><span class="kicker">/ AÇÕES</span><h2 id="t-caixa-registradora">CAIXA <em>REGISTRADORA</em></h2></header>
+            <dl class="specs">
+              <div><dt>Armamento</dt><dd>Proibido o uso de qualquer arma de fogo</dd></div>
+              <div><dt>Resgate</dt><dd>Permitido</dd></div>
+            </dl>
+          </section>
+
+          <section class="chapter" id="caminhao-cegonha" aria-labelledby="t-caminhao-cegonha">
+            <header class="chapter-head"><span class="kicker">/ AÇÕES</span><h2 id="t-caminhao-cegonha">CAMINHÃO <em>CEGONHA</em></h2></header>
+            <dl class="specs">
+              <div><dt>Máximo de bandidos</dt><dd>1 carro completo</dd></div>
+              <div><dt>Máximo de policiais</dt><dd>3 unidades</dd></div>
+              <div><dt>Armamento</dt><dd>Proibido armamento</dd></div>
+              <div><dt>Negociação</dt><dd>Inexistente, ação de confronto direto com a polícia</dd></div>
+              <div><dt>Refém</dt><dd>Proibido; o roubo é uma ação de confronto direto com a polícia</dd></div>
+            </dl>
+          </section>
+
+          <section class="chapter" id="joalheria" aria-labelledby="t-joalheria">
+            <header class="chapter-head"><span class="kicker">/ AÇÕES</span><h2 id="t-joalheria"><em>JOALHERIA</em></h2></header>
+            <dl class="specs">
+              <div><dt>Bandidos</dt><dd>Obrigatório 7 (máximo de 3 fora e 4 dentro)</dd></div>
+              <div><dt>Máximo de policiais</dt><dd>9</dd></div>
+              <div><dt>Veículos dos bandidos</dt><dd>Máximo de 3 (em caso de fuga)</dd></div>
+              <div><dt>Armamento</dt><dd>No mínimo submetralhadora</dd></div>
+              <div><dt>Negociação</dt><dd>Obrigatória</dd></div>
+              <div><dt>Refém</dt><dd>Opcional, no máximo 3</dd></div>
+            </dl>
+            <div class="callout callout-danger"><span class="callout-icon" aria-hidden="true">⚠</span><p>Proibida a utilização dos <strong>INTERIORES</strong> do perímetro (Prefeitura).</p></div>
+          </section>
+
+          <section class="chapter" id="banco-paleto" aria-labelledby="t-banco-paleto">
+            <header class="chapter-head"><span class="kicker">/ AÇÕES</span><h2 id="t-banco-paleto">BANCO DE <em>PALETO</em></h2></header>
+            <figure class="map"><img src="assets/perimetro-paleto.png" alt="Mapa com o perímetro da ação do Banco de Paleto destacado em vermelho" width="768" height="580" loading="lazy"><figcaption>Perímetro da ação</figcaption></figure>
+            <dl class="specs">
+              <div><dt>Bandidos</dt><dd>Obrigatório 10</dd></div>
+              <div><dt>Máximo de policiais</dt><dd>12</dd></div>
+              <div><dt>Armamento</dt><dd>Todos de rifle</dd></div>
+              <div><dt>Refém</dt><dd>Proibido</dd></div>
+              <div class="spec-wide"><dt>Negociação</dt><dd>Inexistente, ação de confronto direto com a polícia. É obrigatório os bandidos esperarem o início da ação. A ação será iniciada somente quando a polícia entrar no perímetro; o helicóptero só poderá ter o piloto.</dd></div>
+            </dl>
+            <div class="callout callout-warning"><span class="callout-icon" aria-hidden="true">!</span><p><strong>Obs.:</strong> máximo de 6 pessoas dentro do <strong>GALINHEIRO</strong>.</p></div>
+          </section>
+
+          <section class="chapter" id="niobio" aria-labelledby="t-niobio">
+            <header class="chapter-head"><span class="kicker">/ AÇÕES</span><h2 id="t-niobio"><em>NIÓBIO</em></h2></header>
+            <dl class="specs">
+              <div><dt>Bandidos</dt><dd>Obrigatório 12 (sem limites fora)</dd></div>
+              <div><dt>Máximo de policiais</dt><dd>18</dd></div>
+              <div><dt>Armamento</dt><dd>Obrigatório rifle</dd></div>
+              <div><dt>Negociação</dt><dd>Inexistente</dd></div>
+              <div><dt>Refém</dt><dd>Proibido</dd></div>
+            </dl>
+            <h3>Observações</h3>
+            <ul>
+              <li>Proibido marcar a porta que dá acesso à água. A parte da água só poderá ser acessada para entrar ou sair do túnel do Nióbio.</li>
+              <li>Limite de 4 bandidos entre o corredor que dá acesso à água e o quadrado do quebrado.</li>
+              <li>É permitido no máximo 4 bandidos no fundo do Nióbio.</li>
+            </ul>
+          </section>
+
+          <section class="chapter" id="assalto-cidadaos" aria-labelledby="t-assalto-cidadaos">
+            <header class="chapter-head"><span class="kicker">/ AÇÕES</span><h2 id="t-assalto-cidadaos">ASSALTO A <em>CIDADÃOS</em></h2></header>
+            <p>Regras para assalto a player.</p>
+            <dl class="specs">
+              <div><dt>Máximo de bandidos</dt><dd>6</dd></div>
+              <div><dt>Veículos dos bandidos</dt><dd>Máximo de 1</dd></div>
+              <div><dt>Horário</dt><dd>Entre 20:00 e 05:00, horário in-game</dd></div>
+              <div><dt>Itens permitidos</dt><dd>Somente itens ilegais. Itens legais devem permanecer intocados</dd></div>
+            </dl>
+            <h3>Conduta</h3>
+            <ul>
+              <li>Os assaltantes devem agir com bom senso e valorização da vida, priorizando a interpretação realista da situação. O uso de armas de fogo deve ser tratado como último recurso, considerando os riscos e as consequências de um confronto. Disparos sem justificativa ou necessidade devem ser evitados, prezando sempre pela coerência do roleplay e pela preservação da vida de todos os envolvidos.</li>
+              <li>A ação de assalto deve ser focada na <strong>geração de conteúdo</strong>. Portanto, deve ser <strong>bem organizada</strong>, evitando render as vítimas de forma improvisada, sem prévia elaboração ou vantagem clara.</li>
+              <li>É essencial agir com <strong>bom senso</strong> em todas as etapas da ação.</li>
+              <li>Assaltos só deverão ser realizados com <strong>pistolas</strong>; fica proibido o assalto a jogadores com o uso de <strong>armamentos pesados</strong>.</li>
+            </ul>
+            <h3>Comunicação</h3>
+            <ul>
+              <li>Os assaltantes devem realizar o assalto utilizando um <strong>canal de rádio exclusivo</strong>, destinado apenas aos envolvidos na ação.</li>
+              <li>Está proibido qualquer tipo de comunicação entre a facção e os participantes do assalto até o término da ação.</li>
+            </ul>
+            <div class="callout callout-danger"><span class="callout-icon" aria-hidden="true">⚠</span><p>É estritamente proibido formar grupos adicionais ou unir-se a outros grupos para realizar o assalto.</p></div>
+            <p class="signature">VILA CARIOCA <span>— LIVRO DE REGRAS</span></p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span class="footer-brand">VILA CARIOCA<span> / REGRAS</span></span><p>Livro de regras oficial. Punições determinadas exclusivamente pela Administração da Vila Carioca.</p><a href="#inicio">Voltar ao topo ↑</a></div></footer>
+</body>
+</html>
