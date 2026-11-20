@@ -15,3 +15,6 @@ O texto segue o GitBook original dos players: introdução, Monitoramento e prod
 ## Publicar
 
 Envie a pasta inteira (com o `index.html` na raiz) para a Netlify, o Cloudflare Pages, a Vercel ou o GitHub Pages. Não há build.
+
+## Atualização das ações (20/11/2026)
+As regras específicas de Açougue, Galinheiro, Joalheria, Banco Paleto, Banco Central, Nióbio e Porta-Aviões foram incluídas/substituídas conforme as regras fornecidas. Não foram incluídas recompensas. As demais seções do livro foram mantidas.
