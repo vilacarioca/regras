@@ -18,3 +18,13 @@ Envie a pasta inteira (com o `index.html` na raiz) para a Netlify, o Cloudflare 
 
 ## Atualização das ações (20/11/2026)
 As regras específicas de Açougue, Galinheiro, Joalheria, Banco Paleto, Banco Central, Nióbio e Porta-Aviões foram incluídas/substituídas conforme as regras fornecidas. Não foram incluídas recompensas. As demais seções do livro foram mantidas.
+
+## Proposta de regra de Guerra de Facção x Facção (22/11/2026)
+
+Foi criado o capítulo independente `#guerra-faccoes` logo após as regras de facções, com link próprio no índice lateral e na busca. O capítulo contém 25 regras, parâmetros sugeridos e modelo de solicitação por ticket. Nenhuma regra pré-existente foi removida nem alterada. Trata-se de **proposta para validação da Administração** antes da publicação.
+
+## Revisão da proposta de guerra entre facções (22/11/2026)
+- Sem quantidade mínima ou máxima fixa de participantes; efetivos equivalentes/equilibrados, validados pela Administração.
+- Duração máxima de 2 horas (120 minutos).
+- Proibida a entrada de membros de facções em favelas rivais fora de uma guerra oficial autorizada e em andamento. A atuação policial permanece regida por suas regras específicas.
+- Atualizados os parâmetros e as regras correspondentes; os demais capítulos foram preservados.
